@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Free tools and resources for TikTok, YouTube Shorts and Instagram Reels creators.">
+<title>ClipForge — Free Creator Tools</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#">ClipForge</a>
+  <nav>
+    <a href="#tools">Tools</a><a href="#resources">Resources</a><a href="#newsletter">Free Tips</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="badge">⚡ FREE CREATOR TOOLS</div>
+  <h1>Make your next video<br><span>impossible to scroll past.</span></h1>
+  <p>Generate hooks, captions, ideas and hashtags for TikTok, Shorts and Reels — free.</p>
+  <a class="button" href="#tools">Try the free tools ↓</a>
+</section>
+
+<section id="tools" class="section">
+  <div class="section-title"><div><small>THE TOOLKIT</small><h2>Free tools for creators</h2></div></div>
+  <div class="grid">
+    <article class="card">
+      <div class="icon">🎯</div><h3>Viral Hook Generator</h3>
+      <p>Turn a topic into scroll-stopping opening lines.</p>
+      <input id="hookTopic" placeholder="e.g. gaming, fitness, money">
+      <button onclick="generateHooks()">Generate hooks</button>
+      <div id="hookOutput" class="output"></div>
+    </article>
+    <article class="card">
+      <div class="icon">💬</div><h3>Caption Generator</h3>
+      <p>Create short captions with a strong call to action.</p>
+      <input id="captionTopic" placeholder="What is your video about?">
+      <button onclick="generateCaption()">Generate caption</button>
+      <div id="captionOutput" class="output"></div>
+    </article>
+    <article class="card">
+      <div class="icon">💡</div><h3>Video Idea Generator</h3>
+      <p>Get practical short-form ideas when you're stuck.</p>
+      <input id="ideaTopic" placeholder="e.g. Reacher edits">
+      <button onclick="generateIdeas()">Generate ideas</button>
+      <div id="ideaOutput" class="output"></div>
+    </article>
+    <article class="card">
+      <div class="icon">#️⃣</div><h3>Hashtag Generator</h3>
+      <p>Build a relevant starting set of hashtags.</p>
+      <input id="hashTopic" placeholder="e.g. basketball">
+      <button onclick="generateHashtags()">Generate hashtags</button>
+      <div id="hashOutput" class="output"></div>
+    </article>
+  </div>
+</section>
+
+<section id="resources" class="section dark">
+  <small>CREATOR RESOURCES</small>
+  <h2>Turn views into an actual system.</h2>
+  <div class="resource-grid">
+    <div><h3>🎬 Editing</h3><p>Use fast cuts, readable captions, pattern interrupts and strong first-second hooks.</p></div>
+    <div><h3>📈 Growth</h3><p>Test multiple hooks for the same idea and track retention rather than guessing.</p></div>
+    <div><h3>💰 Monetization</h3><p>Start with services and useful digital products before relying on advertising revenue.</p></div>
+  </div>
+</section>
+
+<section id="newsletter" class="newsletter">
+  <small>FREE CREATOR TIPS</small><h2>Get better at short-form content.</h2>
+  <p>Join the list for practical ideas. No spam.</p>
+  <form onsubmit="subscribe(event)">
+    <input id="email" type="email" required placeholder="you@example.com">
+    <button type="submit">Join free</button>
+  </form>
+  <div id="formMsg"></div>
+</section>
+</main>
+
+<footer><strong>ClipForge</strong><span>Built for creators.</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
